@@ -9,9 +9,10 @@ require dirname(__FILE__).'/inc/Moteur.php';
 $fiesta = new Car();
 $fiesta = new Car;
 // Je modifie les propriétés marque et modèle de mon Objet
-$fiesta->brand = 'Ford';
+$fiesta->setBrand('Ford');
 $fiesta->model = 'Fiesta';
 $fiesta->paint('rose');
+//$fiesta->setColor('jaune'); // Error car private
 print_r($fiesta);
 
 $moteurFerrari = new Moteur(
@@ -31,7 +32,12 @@ $f40 = new Car(
 	'F40',
 	2
 );
+//$f40->moteur = 'momo'; // ce n'est pas le bon type
+
 print_r($f40);
+
+//echo $f40->brand.'<br>'; // Error :: private property
+echo $f40->getBrand().'<br>'; // OK
 
 echo 'Ma F40 a '.$f40->moteur->getHp().' ch (hp)<br>';
 getHp();

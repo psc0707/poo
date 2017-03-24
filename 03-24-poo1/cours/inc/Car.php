@@ -3,15 +3,15 @@
 // Je définis ma classe Voiture
 class Car {
 	/** @var Moteur */
-	public $moteur;
+	private $moteur;
 	/** @var string */
 	public $vin;
 	/** @var string */
 	public $licencePlate;
 	/** @var string */
-	public $color;
+	private $color;
 	/** @var string */
-	public $brand;
+	private $brand;
 	/** @var string */
 	public $model;
 	/** @var int */
@@ -40,6 +40,36 @@ class Car {
 	public function paint($newColor) {
 		if (strlen($newColor) >= 3) {
 			$this->color = $newColor;
+		}
+	}
+
+	public function paintInBlue() {
+		$this->setColor('blue');
+	}
+
+	public function paintInPink() {
+		$this->setColor('pink');
+	}
+
+	// Getter
+	public function getBrand() {
+		return $this->brand;
+	}
+
+	// Setter
+	public function setBrand($brand) {
+		$this->brand = $brand;
+	}
+
+	// Setter
+	private function setColor($color) {
+		$this->color = $color;
+	}
+
+	// Setter avec vérification du type de la donnée
+	public function setMoteur($moteur) {
+		if (is_a($moteur, 'Moteur')) {
+			$this->moteur = $moteur;
 		}
 	}
 }
