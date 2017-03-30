@@ -1,0 +1,9 @@
+1) Créer la database "revisions"
+2) Créer une table "etudiant"
+3) Ajouter les champs suivants :
+- nom (chaine de 64 caractères)
+- prenom (chaine de 64 caractères)
+- ville (chaine de 32 caractères)
+- pays (chaine de 32 caractères)
+- age (entier)
+- niveau_de_sympathie (entier)

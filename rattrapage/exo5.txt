@@ -1,0 +1,13 @@
+Pour toutes les requêtes, vous pourrez vous aider de la documentation sur le site sql.sh
+
+1) Importer si besoin la base de données webforce4
+
+2) écrire les requêtes SQL permettant :
+	a) d'avoir toutes les villes de la DB par ordre alphabétique croissant
+	b) d'avoir tous les noms, prénoms et email des étudiants par ordre alphabétique croissant sur le nom
+	
+3) écrire la requête SQL permettant d'avoir tous les étudiants de la ville Differdange
+
+4) écrire la requête SQL permettant d'insérer la ville "Dortmund" dans la table ville, avec le Pays "France"
+
+5) écrire la requête SQL permettant de mettre à jour la ligne "Dortmund" dans la table ville, pour la lier au pays "Allemagne"
